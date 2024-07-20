@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<link rel="stylesheet" href="./style.css">
+<head> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="style.css">
 <title>Registration </title>
 <script language="javascript">
     function validate() {
@@ -104,19 +109,15 @@
     f1.address.focus();
     return false;
     }
-    // to display Success message
-    alert("Registration Successful");
-    }
+}
     </script>
 </head>
 <body>
 <div class="wrapper">
 <div class="container">
 <header>
-<table width="100%" align="center" cellpadding="0"
-cellspacing="2">
+<table width="100%" align="center" cellpadding="0" cellspacing="2">
 <tr>
-<th width="20%"></th>
 <th colspan=4>
 <h1 style="color:white;">ONLINE EBOOKS WEBSITE</h1>
 </th>
@@ -124,19 +125,13 @@ cellspacing="2">
 </table>
 </header>
 <nav>
-<table width="100%" align="center" cellpadding="0"
-cellspacing="2">
-<tbody align="center"
-style="font-weight:bold;font-size:18px;"">
+<table width="100%" align="center" cellpadding="0" cellspacing="2">
+<tbody align="center" style="font-weight:bold;font-size:18px;"">
 <tr>
-<td width="20%"><hr><a
-href="Home.html">Home</a><hr></td>
-<td width="20%"><hr><a
-href="Loogin.html">Login</a><hr></td>
-<td width="20%"><hr><a
-href="Register.html">Registration</a><hr></td>
-<td width="20%"><hr><a href="Cart.html"
->Cart</a><hr></td>
+<td width="20%"><hr><a href="index.html">Home</a><hr></td>
+<td width="20%"><hr><a href="Login.html">Login</a><hr></td>
+<td width="20%"><hr><a href="Register.html">Registration</a><hr></td>
+<td width="20%"><hr><a href="Cart.html">Cart</a><hr></td>
 </tr>
 </tbody>
 </table>
@@ -152,36 +147,28 @@ href="Register.html">Registration</a><hr></td>
 <form name="f1">
 <table cellpadding="1" align="center" >
 <tr><td> Name:*</td>
-<td><input type="text"
-name="username"></td></tr>
+<td><input type="text" name="username" placeholder="enter username"></td></tr>
 <tr><td>Password:*</td>
-<td><input type="password"
-name="password"></td></tr>
+<td><input type="password" name="password"></td></tr>
 <tr><td>Email ID:*</td>
-<td><input type="text" name="email"></td></tr>
+<td><input type="text" name="email" placeholder="example@gmail.com"></td></tr>
 <tr><td>Phone Number:*</td>
-<td><input type="text" name="phno"></td></tr>
+<td><input type="text" name="phno" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td></tr>
 <tr><td valign="top">Gender:*</td>
-<td><input type="radio" name="radio"
-value="1">Male &nbsp;&nbsp;
-<input type="radio" name="radio"
-value="2">Female</td></tr>
+<td><input type="radio" name="radio"value="1">Male &nbsp;&nbsp;
+<input type="radio" name="radio" value="2">Female</td></tr>
 <tr> <td valign="top">Language Known:*</td>
-<td> <input type="checkbox" name="checkbox"
-value="English">English<br/>
-<input type="checkbox" name="checkbox"
-value="Telugu">Telugu<br>
-<input type="checkbox" name="checkbox"
-value="Hindi">Hindi<br>
-<input type="checkbox" name="checkbox"
-value="Tamil">Tamil
+<td> <input type="checkbox" name="checkbox" value="English">English<br/>
+<input type="checkbox" name="checkbox" value="Telugu">Telugu<br>
+<input type="checkbox" name="checkbox" value="Hindi">Hindi<br>
+<input type="checkbox" name="checkbox" value="Tamil">Tamil
 </td></tr>
 <tr> <td valign="top">Address:*</td>
 <td><textarea name="address"></textarea></td>
-<tr><td></td><td><input type="submit"
-value="submit" hspace="10" onclick="validate()">
-<input type="reset" value="reset"></td></tr>
-<tr> <td colspan=2 >*<font color="#FF0000">fields are mandatory</font>
+<tr><td></td><td>
+    <input type="button" value="SUBMIT" hspace="10" onclick="validate()">
+<input type="button" value="RESET"></td></tr>
+<tr> <td colspan="2" >*<font color="#FF0000" size="2px">fields are mandatory</font>
 </td>
 </tr>
 </table>
@@ -191,8 +178,7 @@ value="submit" hspace="10" onclick="validate()">
 </div>
 <div class="sidebar2"></div>
 </div><br>
-<footer><font color="white">(C) 2024 All rights reserved by
-ebooks</font></footer>
+<footer style="color: white;">&copy; 2024 All rights reserved by ebooks</footer>
 </div>
 </body>
 </html>
